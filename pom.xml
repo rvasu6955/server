@@ -8,15 +8,6 @@
   <name>my-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-  <build>
-  <plugins>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-war-plugin</artifactId>
-      <version>3.4.0</version> <!-- force modern version -->
-    </plugin>
-  </plugins>
-</build>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -47,4 +38,12 @@
   <build>
     <finalName>my-webapp</finalName>
   </build>
+  <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
